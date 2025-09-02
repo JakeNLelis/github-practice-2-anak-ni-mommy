@@ -1,20 +1,24 @@
-.head {
-  color: hsl(300, 43%, 22%);
-}
-
-.head-desc {
-  color: hsl(303, 10%, 53%);
-}
 * {
-  font-family: 'League Spartan';
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan';
+    box-sizing: border-box;
 }
 
 body {
-  font-size: 15px;
-  color: hsl(300, 43%, 22%);
-  margin: 0;
-  padding: 0;
+
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+    padding: 0;
+    margin: 20px 0;
+
+    /* Neutral Colors */
+    --neutral-bg-dark-grayish-magenta: hsl(303, 10%, 53%);
+    --neutral-bg-light-grayish-magenta: hsl(300, 24%, 96%);
+    --neutral-bg-white: hsl(0, 0%, 100%);
+    /* Card Colors */
+    --card-bg-dark-magenta: hsl(300, 43%, 22%); 
+    --card-bg-soft-pink: hsl(333, 80%, 67%); 
 }
 
 .attribution {
@@ -56,43 +60,39 @@ body {
   font-weight: bold;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.head {
+  color: hsl(300, 43%, 22%);
 }
 
-body{
-    
-    margin: 20px 0;
-
-    /* Neutral Colors */
-    --neutral-bg-dark-grayish-magenta: hsl(303, 10%, 53%);
-    --neutral-bg-light-grayish-magenta: hsl(300, 24%, 96%);
-    --neutral-bg-white: hsl(0, 0%, 100%);
-    /* Card Colors */
-    --card-bg-dark-magenta: hsl(300, 43%, 22%); 
-    --card-bg-soft-pink: hsl(333, 80%, 67%); 
+.head-desc {
+  color: hsl(303, 10%, 53%);
 }
 
+/* Card Rating Section */
 .cards, .card, .card-item__top{
     display: flex;
 }
 
 .cards {
-    gap: 50px;
+    gap: 30px;
+    margin-bottom: 50px;  /* Get rid of this if footer design is finalized*/
     justify-content: center;
 }
 
 .cards img {
     border-radius: 50px;
     margin-right: 20px;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
 }
 
-.card h4, .card p{
-    font-weight: 600;
+.card h4 {
+    font-weight: 700;
+}
+
+.card p {
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 .card span{
@@ -100,7 +100,7 @@ body{
 }
 
 .card-item__top {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     height: max-content;
     align-items: center;
 }
@@ -108,8 +108,16 @@ body{
 .card {
     margin-bottom: 10px;
     background-color: var(--card-bg-dark-magenta);
-    border-radius: 10px;
+    border-radius: 8px;
     color: var(--neutral-bg-white);
-    width: 400px;
-    padding: 30px;
+    width: 350px;
+    padding: 35px;
+}
+
+.card-2 {
+    transform: translateY(20px);
+}
+
+.card-3 {
+    transform: translateY(40px);
 }
